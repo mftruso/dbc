@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import favicon from '../images/favicon.ico'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -12,7 +13,8 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            title,
+            tagline
           }
         }
       }
@@ -25,10 +27,13 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          link={[
+              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+          ]}
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} siteTagline={data.site.siteMetadata.tagline} />
         <div
           style={{
             margin: '0 auto',

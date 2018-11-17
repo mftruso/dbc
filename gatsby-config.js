@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Dave Berg Consulting',
+    tagline: 'Dedicated to providing personal service to consumer-owned utilities'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -26,6 +27,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-  ],
-  pathPrefix: "/dbc", //github repo
+  ]
 }
