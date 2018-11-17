@@ -1,3 +1,5 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -621,4 +623,9 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+#footer {
+  background-color: #343a40;
+  color: #fff;
 }
