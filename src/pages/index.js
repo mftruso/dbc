@@ -1,21 +1,73 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import {Col, Container, Row} from "react-bootstrap";
-import PortraitImage from "../components/portraitImage";
+import {Card, Col, Container, Row} from "react-bootstrap";
 
+const services = [
+    'Retail Cost-of-Service and Rate Design',
+    'Rate Checkups Designed for Smaller Utilities',
+    'Wholesale Cost-of-Service and Rate Design',
+    'QA/QC of Utility Staff Prepared Analyses',
+    'Contract Negotiations',
+    'Utility Education Courses',
+    'Strategic Planning', 'Expert Testimony',
+    'Feasibility Studies'
+]
 const IndexPage = () => (
     <Layout>
+        <main id="main">
         <Container>
-            <Row className="mt-4">
-                <Col md="6">
-                    <h1>Dedicated to providing personal service to consumer-owned utilities</h1>
+            <div className="row section topspace">
+                <div className="col-md-12">
+                    <p className="lead text-center text-muted">
+                        Dedicated to providing personal service to consumer-owned utilities
+                    </p>
+                </div>
+            </div>
+
+            <Row className="section featured topspace">
+                <h2 className="section-title"><span>Clients</span></h2>
+            </Row>
+            <Row>
+                <Col sm={6} md>
+                    <h3 className="text-center">Electric</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique velit. Ut quis arcu quam. Aliquam non nulla leo. Fusce cursus est a ipsum dictum, in aliquet quam egestas. </p>
                 </Col>
-                <Col md="6">
-                    <PortraitImage/>
+                <Col sm={6} md>
+                    <h3 className="text-center">Natural Gas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique velit. Ut quis arcu quam. Aliquam non nulla leo. Fusce cursus est a ipsum dictum, in aliquet quam egestas. </p>
+                </Col>
+                <Col sm={6} md>
+                    <h3 className="text-center">Water</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique velit. Ut quis arcu quam. Aliquam non nulla leo. Fusce cursus est a ipsum dictum, in aliquet quam egestas. </p>
+                </Col>
+                <Col sm={6} md>
+                    <h3 className="text-center">Wastewater</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique velit. Ut quis arcu quam. Aliquam non nulla leo. Fusce cursus est a ipsum dictum, in aliquet quam egestas. </p>
+                </Col>
+                <Col sm={6} md>
+                    <h3 className="text-center">Steam/Heat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non tristique velit. Ut quis arcu quam. Aliquam non nulla leo. Fusce cursus est a ipsum dictum, in aliquet quam egestas. </p>
                 </Col>
             </Row>
-            <Row className="mt-4">
+            <Row className="section featured topspace">
+
+                    <h2 className="section-title"><span>Services</span></h2>
+                {services.map((service, i) =>(
+                    <Col key={i} md={4} >
+                        <Card className="my-2">
+                            <Card.Body>
+                                <Card.Text>
+                                    <h5>{service}</h5>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+
+            <Row className="section featured topspace">
+                <h2 className="section-title"><span>About</span></h2>
                 <Col>
             <p>After spending my entire career at large consulting firms, the last 25 years at R.W. Beck/SAIC, I have formed
                 my own firm to provide a more personal level of service to my clients.</p>
@@ -30,33 +82,8 @@ const IndexPage = () => (
                 University.</p>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <h2>Utility Clients</h2>
-                    <ul>
-                        <li>Electric</li>
-                        <li>Natural Gas</li>
-                        <li>Water</li>
-                        <li>Wastewater</li>
-                        <li>Steam/Heat</li>
-                    </ul>
-                </Col>
-                <Col>
-                    <h2>Services</h2>
-                    <ul>
-                        <li>Retail Cost-of-Service and Rate Design</li>
-                        <li>Rate Checkups Designed for Smaller Utilities</li>
-                        <li>Wholesale Cost-of-Service and Rate Design</li>
-                        <li>QA/QC of Utility Staff Prepared Analyses</li>
-                        <li>Contract Negotiations</li>
-                        <li>Utility Education Courses</li>
-                        <li>Strategic Planning</li>
-                        <li>Expert Testimony</li>
-                        <li>Feasibility Studies</li>
-                    </ul>
-                </Col>
-            </Row>
         </Container>
+        </main>
     </Layout>
 )
 

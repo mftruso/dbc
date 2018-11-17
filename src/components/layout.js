@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
+import {graphql, StaticQuery} from 'gatsby'
 
 import Header from './header'
 import '../sass/layout.scss'
-// import '../sass/initio-styles.css'
+import '../sass/initio-styles.css'
 import favicon from '../images/favicon.ico'
-import Footer from "./footer";
+import DbcFooter from "./dbcFooter";
 
 const Layout = ({children}) => (
     <StaticQuery
@@ -39,7 +39,7 @@ const Layout = ({children}) => (
 
                 {children}
 
-                <Footer/>
+                <DbcFooter/>
             </>
         )}
     />
