@@ -9,7 +9,7 @@ const circleImgStyles = {
     overflow: 'hidden',
     border: '9px solid rgba(0, 0, 0, 0.05)',
     margin: '0 auto',
-    'border-radius': '50%'
+    'borderRadius': '50%'
 }
 const PortraitImage = () => (
     <StaticQuery

@@ -57,9 +57,7 @@ const IndexPage = () => (
                     <Col key={i} md={4} >
                         <Card className="my-2">
                             <Card.Body>
-                                <Card.Text>
-                                    <h5>{service}</h5>
-                                </Card.Text>
+                                <h5>{service}</h5>
                             </Card.Body>
                         </Card>
                     </Col>
