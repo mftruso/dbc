@@ -58,7 +58,7 @@ const DbcFooter = () => (
                     <div className="col-md-6 widget">
                         <div className="widget-body">
                             <p className="text-right">
-                                Copyright &copy; 2018, Dave Berg Consulting, LLC<br/>
+                                Copyright &copy; 2020, Dave Berg Consulting, LLC<br/>
                                 Design: <a href="http://www.gettemplate.com" rel="designer">Initio by
                                 GetTemplate</a><br/>
                                 Development: <a href="https://miketruso.com">Truso Web Development</a>

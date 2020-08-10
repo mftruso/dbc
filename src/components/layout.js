@@ -6,6 +6,7 @@ import {graphql, StaticQuery} from 'gatsby'
 import Header from './header'
 import '../sass/layout.scss'
 import '../sass/initio-styles.css'
+import '../sass/custom.scss'
 import favicon from '../images/favicon.ico'
 import DbcFooter from "./dbcFooter";
 
