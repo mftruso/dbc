@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import PortraitImage from "./portraitImage";
 
 const Header = ({siteTitle, siteTagline}) => (
-    <>
+    <Fragment>
         <header id="header">
             <div id="head" className="parallax" parallax-speed="2">
                 <h1 id="logo" className="text-center">
@@ -13,15 +13,8 @@ const Header = ({siteTitle, siteTagline}) => (
                     </span>
                 </h1>
             </div>
-        {/*<Navbar bg="dark" variant="dark">*/}
-            {/*<Container>*/}
-                {/*<Navbar.Brand href="#">*/}
-                    {/*{siteTitle}*/}
-                {/*</Navbar.Brand>*/}
-            {/*</Container>*/}
-        {/*</Navbar>*/}
         </header>
-    </>
+    </Fragment>
 )
 
 export default Header
