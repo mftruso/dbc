@@ -1,5 +1,6 @@
 import React, {Fragment} from "react";
 import LogoImage from "./logoImage";
+import {OutboundLink} from "gatsby-plugin-google-analytics"
 
 const DbcFooter = () => (
     <Fragment>
@@ -10,7 +11,7 @@ const DbcFooter = () => (
                         <h3 className="widget-title">Contact</h3>
                         <div className="widget-body">
                             <p>(612) 850-2305<br/>
-                                <a href="mailto:dave@davebergconsulting.com">davel@davebergconsulting.com</a><br/>
+                                <OutboundLink href="mailto:dave@davebergconsulting.com">davel@davebergconsulting.com</OutboundLink><br/>
                                 <br/>
                                 15213 Danbury Ave W, Rosemount, MN 55068
                             </p>
@@ -49,9 +50,9 @@ const DbcFooter = () => (
                         <div className="widget-body">
                             <p className="text-right">
                                 Copyright &copy; 2020, Dave Berg Consulting, LLC<br/>
-                                Design: <a href="http://www.gettemplate.com" rel="designer">Initio by
-                                GetTemplate</a><br/>
-                                Development: <a href="https://miketruso.com">Truso Web Development</a>
+                                Design: <OutboundLink href="http://www.gettemplate.com" rel="designer">Initio by
+                                GetTemplate</OutboundLink><br/>
+                                Development: <OutboundLink href="https://miketruso.com">Truso Web Development</OutboundLink>
                             </p>
                         </div>
                     </div>

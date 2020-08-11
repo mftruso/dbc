@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import PortraitImage from "./portraitImage";
+import {OutboundLink} from "gatsby-plugin-google-analytics"
 
 const Header = ({siteTitle, siteTagline}) => (
     <Fragment>
@@ -9,7 +10,7 @@ const Header = ({siteTitle, siteTagline}) => (
                     <PortraitImage/>
                     <span className="title">{siteTitle}</span>
                     <span className="tagline">
-                        <a href="mailto:dave@davebergconsulting.com">dave@davebergconsulting.com</a>
+                        <OutboundLink href="mailto:dave@davebergconsulting.com">dave@davebergconsulting.com</OutboundLink>
                     </span>
                 </h1>
             </div>
