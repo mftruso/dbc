@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Fragment} from "react";
 import LogoImage from "./logoImage";
 
 const DbcFooter = () => (
-    <>
+    <Fragment>
         <footer id="footer">
             <div className="container">
                 <div className="row">
@@ -59,7 +59,7 @@ const DbcFooter = () => (
                 </div>
             </div>
         </footer>
-    </>
+    </Fragment>
 )
 
 export default DbcFooter;

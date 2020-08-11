@@ -12,7 +12,8 @@ const services = [
     'Utility Education Courses',
     'Strategic Planning', 'Expert Testimony',
     'Feasibility Studies'
-]
+];
+
 const IndexPage = () => (
     <Layout>
         <main id="main">
@@ -63,8 +64,8 @@ const IndexPage = () => (
                     <h3 className="text-center">Steam/Heat</h3>
                 </Col>
             </Row>
-            
-            <Row className="section featured topspace">
+
+            <Row className="section featured topspace last-row">
                     <h2 className="section-title"><span>Services</span></h2>
                 {services.map((service, i) =>(
                     <Col key={i} md={4} >
