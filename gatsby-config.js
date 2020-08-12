@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Dave Berg Consulting',
-    tagline: 'Dedicated to providing personal service to consumer-owned utilities'
+    tagline: 'Dedicated to providing personal service to consumer-owned utilities',
+    siteUrl: `https://www.davebergconsulting.com`,
   },
   plugins: [
     {
@@ -57,5 +58,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`
   ]
 }
