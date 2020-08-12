@@ -27,8 +27,8 @@ const Layout = ({children}) => (
                 <Helmet
                     title={data.site.siteMetadata.title}
                     meta={[
-                        {name: 'description', content: 'Sample'},
-                        {name: 'keywords', content: 'sample, something'},
+                        {name: 'description', content: 'Providing professional services to electric, natural gas, water and wastewater utilities including retail and wholesale cost-of-service and rate design studies'},
+                        {name: 'keywords', content: 'electric, natural gas, water, wastewater, rate study, utility, utilities, professional, consulting, rate design'},
                     ]}
                     link={[
                         {rel: 'shortcut icon', type: 'image/png', href: `${favicon}`}
