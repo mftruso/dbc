@@ -11,7 +11,7 @@ const DbcFooter = () => (
                         <h3 className="widget-title">Contact</h3>
                         <div className="widget-body">
                             <p>(612) 850-2305<br/>
-                                <OutboundLink href="mailto:dave@davebergconsulting.com">davel@davebergconsulting.com</OutboundLink><br/>
+                                <OutboundLink href="mailto:dave@davebergconsulting.com">dave@davebergconsulting.com</OutboundLink><br/>
                                 <br/>
                                 15213 Danbury Ave W, Rosemount, MN 55068
                             </p>
