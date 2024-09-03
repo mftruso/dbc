@@ -36,7 +36,7 @@ const IndexPage = () => (
               my own firm, Dave Berg Consulting, to provide a more personal level of service to my clients.
             </p>
             <p>
-              I have over 35 years experience providing professional consulting services to utilities. These
+              I have over 40 years experience providing professional consulting services to utilities. These
               services have required a combination of technical and economic expertise to assist clients with important
               decisions affecting the operational and financial health of their utilities. Over the course of my career,
               I have managed projects including retail and wholesale utility cost-of-service and rate design, power
