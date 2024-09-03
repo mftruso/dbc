@@ -1,6 +1,5 @@
 import React from 'react'
-import {graphql, StaticQuery} from 'gatsby'
-import Img from 'gatsby-image'
+import { StaticImage } from "gatsby-plugin-image"
 
 const circleImgStyles = {
     display: 'block',
@@ -12,20 +11,6 @@ const circleImgStyles = {
     'borderRadius': '50%'
 }
 const PortraitImage = () => (
-    <StaticQuery
-        query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "Dave_Berg.jpg" }) {
-          childImageSharp {
-            fixed(width: 140, height: 140) {
-              ...GatsbyImageSharpFixed
-            },
-          }
-        }
-      }
-    `}
-        render={data => <Img style={circleImgStyles} alt="Dave Berg"
-                             fixed={data.placeholderImage.childImageSharp.fixed}/>}
-    />
+    <StaticImage style={circleImgStyles} alt="Dave Berg" src="../images/Dave_Berg.jpg" />
 )
 export default PortraitImage

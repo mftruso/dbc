@@ -1,7 +1,9 @@
-import React from 'react'
-
+import * as React from "react"
 import Layout from '../components/layout'
 import {Card, Col, Container, Row} from "react-bootstrap";
+import { useSiteMetadata } from "../hooks/useSiteMetadata";
+import favicon from '../images/favicon.ico'
+
 
 const services = [
   'Retail Cost-of-Service and Rate Design',
@@ -14,8 +16,9 @@ const services = [
   'Feasibility Studies'
 ];
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+  return (
+    <Layout>
     <main id="main">
       <Container>
         <div className="row section topspace">
@@ -98,6 +101,21 @@ const IndexPage = () => (
       </Container>
     </main>
   </Layout>
-)
+  )
+}
 
 export default IndexPage
+
+
+export const Head = ({ title, description, pathname, children }) => {
+  const {title: defaultTitle, description: defaultDescription, keywords} = useSiteMetadata()
+
+  return (
+  <>
+    <title>{title || defaultTitle}</title>
+    <meta name="description" content={description || defaultDescription} />
+    <meta name="keywords" content={keywords} />
+    <link rel="shortcut icon" type="image/png" href={favicon}/>
+  </>
+  )
+}

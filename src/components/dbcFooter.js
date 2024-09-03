@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import LogoImage from "./logoImage";
-import {OutboundLink} from "gatsby-plugin-google-analytics"
+import {OutboundLink} from "gatsby-plugin-google-gtag"
 
 const DbcFooter = () => (
     <Fragment>

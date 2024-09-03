@@ -1,43 +1,33 @@
 {
-  "name": "dave-berg-consulting",
-  "description": "Dave Berg Consulting Website",
+  "name": "dbc",
   "version": "1.0.0",
-  "author": "Mike Truso <mftruso@gmail.com>",
-  "dependencies": {
-    "bootstrap": "^4.6.2",
-    "gatsby": "^2.32.13",
-    "gatsby-image": "^2.11.0",
-    "gatsby-plugin-google-analytics": "^2.11.0",
-    "gatsby-plugin-manifest": "^2.12.1",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.10.0",
-    "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.14.4",
-    "gatsby-plugin-sitemap": "^2.12.0",
-    "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-sharp": "^2.12.1",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-bootstrap": "^1.6.8",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^5.2.0"
-  },
+  "private": true,
+  "description": "dbc",
+  "author": "Mike Truso",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "devDependencies": {
-    "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.2.0",
+    "sass": "^1.77.8"
   }
 }

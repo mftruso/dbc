@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import PortraitImage from "./portraitImage";
-import {OutboundLink} from "gatsby-plugin-google-analytics"
+import {OutboundLink} from "gatsby-plugin-google-gtag"
 
 const Header = ({siteTitle, siteTagline}) => (
     <Fragment>
